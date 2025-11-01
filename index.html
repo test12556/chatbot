@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>ApilageAI Chatbot</title>
+  <title>Aswenn AI Chatbot</title>
   <style>
     body {
       font-family: "Poppins", sans-serif;
@@ -123,13 +123,13 @@
 </head>
 <body>
   <div class="chat-wrapper">
-    <div class="chat-header">🤖 ApilageAI Chatbot</div>
+    <div class="chat-header">🤖 Aswenn AI Chatbot</div>
     <div class="chat-box" id="chatBox">
-      <div class="message bot">Hello 👋 I'm ApilageAI. How can I help you today?</div>
+      <div class="message bot">Hello 👋 මම <b>Aswenn AI</b> — ඔබට උදව් කරන්න සූදානම්!</div>
     </div>
     <div class="input-area">
-      <input type="text" id="userInput" placeholder="Type your message..." />
-      <button onclick="sendMessage()">Send</button>
+      <input type="text" id="userInput" placeholder="ඔබේ පණිවිඩය ලියන්න..." />
+      <button onclick="sendMessage()">යවන්න</button>
     </div>
   </div>
 
@@ -155,10 +155,10 @@
         if (data.reply) {
           addMessage("bot", data.reply);
         } else {
-          addMessage("bot", "⚠️ Sorry, I didn’t get that.");
+          addMessage("bot", "⚠️ සමාවෙන්න, මට ඒක තේරෙන්නෙ නැහැ.");
         }
       } catch (error) {
-        addMessage("bot", "⚠️ Connection error. Please try again.");
+        addMessage("bot", "⚠️ සම්බන්ධතාවයේ දෝෂයක් සිදු විය. කරුණාකර නැවත උත්සාහ කරන්න.");
       }
     }
 
